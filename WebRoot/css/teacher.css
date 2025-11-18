@@ -1,0 +1,228 @@
+/* 教师端样式优化 */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    padding-bottom: 30px;
+}
+
+/* 导航栏样式 */
+.header {
+    background: #fff !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    height: 60px;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header .logo {
+    margin-top: 0;
+    line-height: 60px;
+    margin-left: 20px;
+}
+
+.header .logo h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+    font-weight: normal;
+}
+
+.header .head-l {
+    margin-top: 13px;
+    margin-right: 15px;
+}
+
+/* 移除旋转图标 */
+.rotate-hover {
+    animation: none !important;
+    -webkit-animation: none !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+    transition: none !important;
+    -webkit-transition: none !important;
+}
+
+/* 左侧导航样式 */
+.leftnav {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    width: 220px;
+    top: 60px;
+    border-right: 1px solid #eee;
+}
+
+.leftnav-title {
+    background: #f8f9fa;
+    height: 50px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.leftnav h2 {
+    background: #fff;
+    border-top: none;
+    font-size: 15px;
+    padding: 12px 0 12px 22px;
+    border-bottom: 1px solid #eee;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.leftnav h2:hover {
+    background-color: #f8f9fa;
+}
+
+.leftnav ul {
+    border-top: none;
+}
+
+.leftnav ul li a {
+    padding: 10px 0 10px 35px;
+    transition: all 0.3s;
+    border-bottom: 1px solid #f5f5f5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.leftnav ul li a:hover {
+    background-color: #f8f9fa;
+    color: #0ae;
+    padding-left: 40px;
+}
+
+/* 面包屑导航 */
+.bread {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 12px 20px;
+    margin-left: 220px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 主内容区域 */
+.admin {
+    top: 105px;
+    left: 220px;
+    background-color: #f5f5f5;
+    padding: 15px;
+}
+
+/* 面板样式 */
+.panel {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: none;
+}
+
+.panel-head {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+    font-weight: normal;
+}
+
+.panel-head strong {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.panel-body {
+    padding: 20px;
+}
+
+/* 表格样式 */
+.table {
+    border: none;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: normal;
+}
+
+.table td, .table th {
+    padding: 12px 8px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 按钮样式 */
+.button {
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.button-little {
+    padding: 6px 15px;
+}
+
+.bg-blue, .border-blue .button.active {
+    background-color: #2196F3 !important;
+    color: #fff;
+}
+
+.bg-red, .border-red .button.active {
+    background-color: #f44336 !important;
+    color: #fff;
+}
+
+/* 表单样式 */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    transition: all 0.3s;
+}
+
+.input:focus {
+    border-color: #2196F3;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.2);
+}
+
+/* 统计页面样式 */
+.chart-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.select-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* 响应式调整 */
+@media (max-width: 760px) {
+    .leftnav {
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+    
+    .admin {
+        position: static;
+        width: 100%;
+    }
+    
+    .bread {
+        margin-left: 0;
+    }
+} 
